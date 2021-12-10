@@ -8,7 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var viewOfRGB: UIView!
+    @IBOutlet weak var sliderOne: UISlider!
+    @IBOutlet weak var sliderTwo: UISlider!
+    @IBOutlet weak var sliderThree: UISlider!
+    @IBOutlet weak var labelOfRed: UILabel!
+    @IBOutlet weak var labelOfGreen: UILabel!
+    @IBOutlet weak var labelOfBlue: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
