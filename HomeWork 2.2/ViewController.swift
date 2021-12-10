@@ -22,9 +22,25 @@ class ViewController: UIViewController {
         
         viewOfRGB.layer.cornerRadius = 20
         
+        
+        
     }
 
+    @IBAction func sliderOneAction() {
+        sliderOne.value = round(sliderOne.value * 100) / 100
+        labelOfRed.text = String(sliderOne.value)
+       
+        
+    }
     
+    @IBAction func sliderTwoAction() {
+        sliderTwo.value = round(sliderTwo.value * 100) / 100
+        labelOfGreen.text = String(sliderTwo.value)
+    }
     
+    @IBAction func sliderThreeAction() {
+        sliderThree.value = round(sliderThree.value * 100) / 100
+        labelOfBlue.text = String(sliderThree.value)
+    }
 }
 
