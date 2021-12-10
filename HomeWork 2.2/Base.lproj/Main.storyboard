@@ -84,7 +84,7 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rqb-HY-D4s">
                                                 <rect key="frame" x="-2" y="0.0" width="134" height="31"/>
                                                 <color key="minimumTrackTintColor" red="1" green="0.02565510906" blue="0.002458661768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="maximumTrackTintColor" red="1" green="0.02565510906" blue="0.002458661768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                 <connections>
                                                     <action selector="sliderOneAction" destination="BYZ-38-t0r" eventType="valueChanged" id="v7H-v6-lNB"/>
@@ -93,7 +93,7 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H0L-kZ-o9f">
                                                 <rect key="frame" x="-2" y="59" width="134" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
-                                                <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                 <connections>
                                                     <action selector="sliderTwoAction" destination="BYZ-38-t0r" eventType="valueChanged" id="RCi-rY-xdj"/>
@@ -106,7 +106,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="DOR-1K-NaZ"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
-                                                <color key="maximumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                 <connections>
                                                     <action selector="sliderThreeAction" destination="BYZ-38-t0r" eventType="valueChanged" id="yGA-RD-qAI"/>
@@ -158,6 +158,9 @@
     <resources>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

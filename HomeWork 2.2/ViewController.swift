@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     @IBAction func sliderOneAction() {
         sliderOne.value = round(sliderOne.value * 100) / 100
         labelOfRed.text = String(sliderOne.value)
+        let sliderOneValue = CGFloat(sliderOne.value)
+        viewOfRGB.backgroundColor = UIColor (red: sliderOneValue, green: 0, blue: 0, alpha: 1)
        
         
     }
