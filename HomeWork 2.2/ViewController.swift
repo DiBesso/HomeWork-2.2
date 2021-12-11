@@ -26,23 +26,24 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func sliderOneAction() {
+    @IBAction func sliderAction() {
+        
         sliderOne.value = round(sliderOne.value * 100) / 100
+        sliderTwo.value = round(sliderTwo.value * 100) / 100
+        sliderThree.value = round(sliderThree.value * 100) / 100
+        
         labelOfRed.text = String(sliderOne.value)
+        labelOfGreen.text = String(sliderTwo.value)
+        labelOfBlue.text = String(sliderThree.value)
+        
         let sliderOneValue = CGFloat(sliderOne.value)
-        viewOfRGB.backgroundColor = UIColor (red: sliderOneValue, green: 0, blue: 0, alpha: 1)
+        let sliderTwoValue = CGFloat(sliderTwo.value)
+        let sliderThreeValue = CGFloat(sliderThree.value)
+        
+        viewOfRGB.backgroundColor = UIColor (red: sliderOneValue, green: sliderTwoValue, blue: sliderThreeValue, alpha: 1)
        
         
     }
-    
-    @IBAction func sliderTwoAction() {
-        sliderTwo.value = round(sliderTwo.value * 100) / 100
-        labelOfGreen.text = String(sliderTwo.value)
-    }
-    
-    @IBAction func sliderThreeAction() {
-        sliderThree.value = round(sliderThree.value * 100) / 100
-        labelOfBlue.text = String(sliderThree.value)
-    }
+ 
 }
 
