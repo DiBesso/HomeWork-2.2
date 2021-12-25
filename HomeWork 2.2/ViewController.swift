@@ -40,7 +40,12 @@ class ViewController: UIViewController {
         let sliderTwoValue = CGFloat(sliderTwo.value)
         let sliderThreeValue = CGFloat(sliderThree.value)
         
-        viewOfRGB.backgroundColor = UIColor (red: sliderOneValue, green: sliderTwoValue, blue: sliderThreeValue, alpha: 1)
+        viewOfRGB.backgroundColor = UIColor (
+            red: sliderOneValue,
+            green: sliderTwoValue,
+            blue: sliderThreeValue,
+            alpha: 1
+        )
        
         
     }
