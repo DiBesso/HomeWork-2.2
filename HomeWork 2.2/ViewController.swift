@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var viewOfRGB: UIView!
@@ -16,6 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelOfRed: UILabel!
     @IBOutlet weak var labelOfGreen: UILabel!
     @IBOutlet weak var labelOfBlue: UILabel!
+    @IBOutlet weak var textFieldOfRed: UITextField!
+    @IBOutlet weak var textFieldOfGreen: UITextField!
+    @IBOutlet weak var textFieldOfBlue: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,9 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func doneAction() {
+        dismiss(animated: true)
+    }
     @IBAction func sliderAction() {
         
         sliderOne.value = round(sliderOne.value * 100) / 100
@@ -36,9 +44,14 @@ class ViewController: UIViewController {
         labelOfGreen.text = String(sliderTwo.value)
         labelOfBlue.text = String(sliderThree.value)
         
+        textFieldOfRed.text = labelOfRed.text
+        textFieldOfGreen.text = labelOfGreen.text
+        textFieldOfBlue.text = labelOfBlue.text
+        
         let sliderOneValue = CGFloat(sliderOne.value)
         let sliderTwoValue = CGFloat(sliderTwo.value)
         let sliderThreeValue = CGFloat(sliderThree.value)
+        
         
         viewOfRGB.backgroundColor = UIColor (
             red: sliderOneValue,
@@ -51,4 +64,3 @@ class ViewController: UIViewController {
     }
  
 }
-
