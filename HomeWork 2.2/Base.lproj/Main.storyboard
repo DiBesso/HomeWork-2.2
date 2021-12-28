@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8T-LW-zkF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s7Z-IK-Bcp">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -85,7 +85,7 @@
                                                         <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                         <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                         <connections>
-                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="v7H-v6-lNB"/>
+                                                            <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DVC-R8-l4x"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H0L-kZ-o9f">
@@ -94,7 +94,7 @@
                                                         <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                         <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                         <connections>
-                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="DRm-pn-VJb"/>
+                                                            <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yw1-Zd-UNH"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lmB-dM-UZ9">
@@ -103,7 +103,7 @@
                                                         <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                         <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                         <connections>
-                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="47c-7h-4ca"/>
+                                                            <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Hv-NO-VDa"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+            <point key="canvasLocation" x="1016.25" y="80.281690140845072"/>
         </scene>
         <!--Open View Controller-->
         <scene sceneID="vC1-K4-e8F">
@@ -180,26 +180,43 @@
                     <view key="view" contentMode="scaleToFill" id="Pfu-pz-Zgq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7E-eM-KGx">
-                                <rect key="frame" x="259" y="20" width="45" height="31"/>
-                                <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="axR-3Q-FVi"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2FI-r8-LEe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="F7E-eM-KGx" firstAttribute="top" secondItem="2FI-r8-LEe" secondAttribute="top" constant="20" id="MSM-NV-Cj4"/>
-                            <constraint firstItem="2FI-r8-LEe" firstAttribute="trailing" secondItem="F7E-eM-KGx" secondAttribute="trailing" constant="16" id="aTS-9T-nVd"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xly-Kr-DBU">
+                        <barButtonItem key="rightBarButtonItem" id="S0g-v1-aoc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F7E-eM-KGx">
+                                <rect key="frame" x="254.5" y="5" width="49.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="s9w-Gl-Fmp"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ax2-eL-0QG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-733" y="80"/>
+            <point key="canvasLocation" x="264.375" y="79.225352112676063"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8R2-jO-lHe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s7Z-IK-Bcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="doy-96-Ha5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8T-LW-zkF" kind="relationship" relationship="rootViewController" id="Feb-k5-tSo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88B-10-ffy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="80"/>
         </scene>
     </scenes>
     <resources>

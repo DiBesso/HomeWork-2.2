@@ -7,13 +7,23 @@
 
 import UIKit
 
-class OpenViewController: UIViewController {
+protocol ViewControllerDelegate {
+    func setColor (_ color : UIColor)
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor.black
+class OpenViewController: UIViewController {
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! ViewController
+        viewController.delegate = self
+        viewController.viewColor = view.backgroundColor
     
     }
-    
-
+}
+        
+extension OpenViewController: ViewControllerDelegate {
+    func setColor(_ color: UIColor) {
+        view.backgroundColor = color
+    }
 }
